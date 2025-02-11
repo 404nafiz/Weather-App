@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-blue-100 flex items-center justify-center min-h-screen">
+    <div class="bg-gradient-to-tl from-gray-900 via-gray-800 to-gray-700 p-6 rounded-lg w-96">    
+      <div class=" mt-10 mb-5 flex justify-center items-center gap-10">
+         <input id="Search" class="rounded-2xl border-orange-400 text-center " type="text">
+        <button id="button" class="border  rounded-2xl  px-5 font-semibold text-white" >Search</button>
+      </div>
+      <div id="box1" class="img  justify-center items-center hidden" ><img src="images/clouds.png" alt="" id="imgofcloud" >
+      <div class="text ">
+        <h4 id="temp" class="p-3  text-white text-6xl text-center"></h4>
+        <h4 id="city" class="p-2  text-white text-3xl text-center"></h4>
+  
+      </div>
+    </div>
+      <div id="box2" class="details  hidden">
+        <div class="ld flex   justify-start items-center">
+          <img class="h-5 w-auto  mx-5" src="images/humidity.png "alt="">
+          <div class="text ">
+            <h2 id="humidity" class="text-white"></h2>
+            <h2 class="text-white">Humidity</h2>
+          </div>
+          
+          
+        </div>
+        <div class="ld flex   justify-end items-center">
+          <img class="h-5 w-auto  mx-5" src="images/wind.png"alt="">
+          <div class="text ">
+            <h2 id="wind" class="text-white"></h2>
+            <h2 class="text-white">Wind Speed</h2>
+          </div>
+          
+          
+        </div>
+        
+
+
+
+      </div>
+      <div class="flex items-center justify-center">
+      <button id="newsearch" class=" hidden  border  rounded-2xl  px-5 font-semibold text-white m-10  hover:text-amber-100"  >Search Weather</button>
+      </div>
+    </div>
+    
+    
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
